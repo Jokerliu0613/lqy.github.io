@@ -1,0 +1,53 @@
+/* style.css */
+<script>
+// 简单的欢迎提示
+document.addEventListener('DOMContentLoaded', function() {
+    alert('欢迎访问我的网站！');
+    
+    // 点击技能项变色
+    document.querySelectorAll('li').forEach(item => {
+        item.addEventListener('click', () => {
+            item.style.color = '#007bff';
+        });
+    });
+});
+</script>
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 20px;
+}
+
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #333;
+}
+
+nav a:hover {
+    color: #007bff;
+}
+
+.intro {
+    margin: 40px 0;
+}
+
+.skills {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+footer {
+    text-align: center;
+    margin-top: 50px;
+    color: #666;
+}
